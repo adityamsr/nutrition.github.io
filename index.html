@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+
+
+
+<!-- this is for menu bar plus dropdown menu -->
+
+
+ul {
+  font-family:courier;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+li {
+  float:left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 20px 42px;
+  text-decoration: none;
+  border-radius: 0px;
+        }
+li a:hover, .fruit:hover .dropbtn{
+  background-color: white;
+  color: black;
+}
+
+li.fruit {
+  position: relative;
+  display: inline-block;
+}
+
+
+.fruit-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.fruit-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.fruit-content a:hover:not(.active) {background-color: #f1f1f1;}
+
+.active {
+  background-color: grey;
+}
+
+.fruit:hover .fruit-content {
+  display: block;
+}
+
+
+
+
+h1{
+text-align: center;
+font-family:courier;
+background-color: lightgrey;
+font-size:7vw;
+border: 9px solid black;
+border-radius: 18px;
+}
+
+h3{
+text-align: center;
+font-family:courier;
+background-color: MediumSeaGreen;
+font-size:3vw;
+}
+
+h4{
+border-radius: 18px;
+text-align: center;
+font-family:courier;
+background-color:orange;
+font-size:3vw;
+}
+
+table,th,td{
+    border: 2px solid black; 
+    border-collapse: collapse;  <!-- this will provide single line division but when we remove this line line it will provide double line division-->
+      }
+    th,td{
+     padding: 20px;   <!-- this will provide space between the line and alphabets which are written in the blocks--> 
+      }
+    th {
+      text-align: left;  <!-- this will allign the text of the heading to the left--> 
+      }
+    table {
+      border-spacing: 15px;  <!-- this line will show its impact only if BORDER-COLLAPSE is commented-->
+         }
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<h1>WORLD OF NUTRITION</h1>
+<h3>"An Initiative Towards Healthy Life"</h3>
+<h2 style="background-color:skyblue; text-align:center; border-radius: 18px;">Remember to drink between 10 to 12 glasses of water per day.</h2>
+
+ <ul>
+  <li class="fruit"><a class="active"; href="#home">Home</a> </li>
+  <li class="fruit"><a class="dropbtn"; href="#fruit; javascript:void(0)">Fruits</a>
+    <div class="fruit-content">
+      <a href="Pineapple1.html">Pineapple</a>
+      <a href="Apple1.html">Apple</a>
+      <a href="banana.html">Banana</a>
+      <a href="mango.html">Mango</a>
+      <a href="grapes.html">Grapes</a>
+      <a href="Pomegranate.html">Pomegranate</a>
+    </div>
+</li>
+  <li class="fruit"><a class="dropbtn"; href="#grain; javascript:void(0)">Grain</a>
+  <div class="fruit-content">
+      <a href="oats.html">Oats</a>
+      <a href="brown.html">Brown Rice</a>
+      <a href="cornt.html">Corn (Maize)</a>
+      <a href="daliap.html">Porridge (Dalia)</a>
+      <a href="quinoan.html">Quinoa</a>
+      <a href="flour1.html">Wheat (Flour)</a>
+    </div>
+
+</li>
+  <li class="fruit"><a class="dropbtn"; href="#nuts; javascript:void(0)">Nuts</a>
+  <div class="fruit-content">
+      <a href="almond1.html">Almonds</a>
+      <a href="cashew1.html">Cashew</a>
+      <a href="walnut1.html">Walnut</a>
+      <a href="pistachio1.html">Pistachios</a>
+      <a href="hazelnut1.html">Hazelnut</a>
+      <a href="pecans.html">Pecans</a>
+    </div>
+</li>
+  <li class="fruit"><a class="dropbtn"; href="#vegetable; javascript:void(0)">Vegetables/Legumes/Beans</a>
+   <div class="fruit-content">
+      <a href="spinach.html">Spinach</a>
+      <a href="ladyfinger.html">Ladyfinger</a>
+      <a href="cabbage.html">Cabbage</a>
+      <a href="cauliflower.html">Cauliflower</a>
+      <a href="broccoli.html">Broccoli</a>
+      <a href="onion.html">Onion</a>
+      <a href="potato.html">Potato</a>
+      <a href="sweetpotato.html">Sweet Potato</a>
+      <a href="#"></a>
+ 
+      <a href="peanut.html">Peanuts</a>
+      <a href="lentils.html">Lentils</a>
+      <a href="chickpea.html">Chickpea Sprouts</a>
+      <a href="kidneybeans.html">Kidney Beans</a>
+     
+    </div>
+</li>
+  <li class="fruit"><a class="dropbtn"; href="#dairy;  javascript:void(0)">Dairy Product</a>
+    <div class="fruit-content">
+      <a href="yogurt.html">Yogurt</a>
+      <a href="cheese.html">Cheese</a>
+      <a href="milk.html">Milk</a>
+      <a href="ghee.html">Ghee</a>
+      <a href="paneer.html">Paneer</a>
+    </div>
+</li>
+  <li class="fruit"><a class="dropbtn"; href="#account; javascript:void(0)">Account</a>
+    <div class="fruit-content">
+      <a href="loginwamp.html">Log-In</a>
+      <a href="signup.html">Sign-Up</a>
+    </div>
+</li>
+  <li class="fruit"><a href="about.html" >About</a> </li>
+ 
+</ul> <br><br><br><br>
+
+<image src="oats1.jpg" style="height:550px; width:1523px"> </a>
+
+
+
+
+<h4>Quick Review Of Nutrition</h4>
+
+<p>Nutrients are molecules in food that all organisms need to make energy, grow, develop, and reproduce.
+There are two main types of nutrients, macronutrients and micronutrients. The three main categories of macronutrients include carbohydrate, protein, and fat. The two types of micronutrients are vitamins and minerals, and these are extra molecules that cells need to make energy.</p>
+
+<h4>Importance Of Nutrition</h4>
+ <ol> 
+  <li>Reduce the risk of some diseases, including heart disease, diabetes, stroke, some cancers, and osteoporosis.</li> <br>
+  <li>Reduce high blood pressure.</li><br>
+  <li>Lower high cholesterol.</li><br>
+  <li>Improve your well-being.</li>  <br>
+  <li>Improve your ability to fight off illness.</li> <br>  
+  <li>Improve your ability to recover from illness or injury.</li> <br>
+  <li>Increase your energy level.</li>  <br>
+ </ol>
+
+<image src="healthy11.jpg" style="height:450px; width:1523px"> </a>
+
+<h4>Muscle Gain Diet Plan For Man</h4>
+<table style="width:100%">
+  <tr>
+    <th>Meal 1</th>
+    <th>Meal 2</th> 
+    <th>Meal 3</th>
+    <th>Meal 4</th>
+    <th>Meal 5</th>
+    <th>Meal 6</th> 
+    <th>Meal 7</th> 
+  </tr>
+  <tr>
+    <td> <ol> <li> Oats with apple</li><br>
+              <li>6 egg whites 2 whole egg</li> <ol></td> 
+      <td> <ol> <li>  Whole Wheat bagel </li><br>
+              <li>  Protein drink </li><br>
+              <li> 1sp Flex seed oil </li><ol></td> 
+    
+      <td> <ol> <li> Paneer </li><br>
+              <li>  Large Garden Salad</li><br>
+              <li> Sweet Potato </li><ol></td> 
+       <td> <ol> <li>  Whole Grain Bread </li><br>
+              <li>  Peanut Butter </li><br>
+              <li> Egg White </li><ol></td>         
+
+        <td> <ol> <li>  Banana </li><br>
+              <li>  Protein drink </li> <ol><br>
+              </td> 
+
+         <td> <ol> <li> Big Bowl Beans Soup </li><br>
+              <li>  Large Green Salad </li><br>
+              <li> Plain Fat Free Yogurt </li><ol></td> 
+
+          <td> <ol> <li>  Cottage Seed With Blue Berries And Flex Seed Meal </li><br>
+              <li>  Handful Nuts </li> <ol><br>
+              </td> 
+ </tr>
+</table> <br>
+
+
+<h4> Fat Loss Plan For Woman </h4>
+
+<table style="width:100%">
+  <tr>
+    <th>Meal 1</th>
+    <th>Meal 2</th> 
+    <th>Meal 3</th>
+    <th>Meal 4</th>
+    <th>Meal 5</th>
+    <th>Meal 6</th> 
+    <th>Meal 7</th> 
+  </tr>
+  <tr>
+    <td> <ol> <li>Whole grain cereals with fat fee milk</li><br>
+              <li>One egg white and one full egg</li> <ol></td> 
+      <td> <ol> <li>  Protein drink </li><br>
+              <li>  Apple  </li><br>
+              <li> Almonds </li><ol></td> 
+    
+      <td> <ol> <li> Chicken breast or black beans</li><br>
+              <li>  Large garden salad with half table spoon of olive oil</li><br>
+             <ol></td> 
+       <td> <ol> <li>  4-5 Strawberries and half handful peanuts  </li><br>
+                 <li> 3 Egg white </li><ol></td>         
+
+        <td> <ol> <li>  Banana </li><br>
+              <li>  Protein drink </li> <ol><br>
+              </td> 
+
+         <td> <ol> <li> Fish/Tuna </li><br>
+              <li>  Large green salad with half tablespoon of olive oil </li><br>
+              <li> Broccali </li><ol></td> 
+
+          <td> <ol> <li>  Cottage Seed With Blue Berries And Flex Seed Meal </li><br>
+              <li>  Handful Nuts </li> <ol><br>
+              </td> 
+ </tr>
+</table> <br>
+
+<h4> Our Collaboration Site To Contact With </h4>
+<p>Just Click On The Given Below Link To Explore Your Experience.</p>
+<div style="background-color:#black;text-align:center;padding:10px;margin-top:7px"> <a href="https://www.pickuplimes.com/" target="_blank";> Pickup Limes </a> 
+<br> <br>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px">
+<a href="https://www.instagram.com/adityamsr/" target="_blank">
+<image src="insta.jpg" style="width:40px;height:40px;"> </a>
+<a href="https://www.instagram.com/adityamsr/" target="_blank">
+<image src="pinterest.jpg" style="width:40px;height:40px;"> </a>  
+ <br>Instagram Pinterest </div> 
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px">© copyright worldofnutrition.com</div>
+
+
+
+</body>
+</html>
